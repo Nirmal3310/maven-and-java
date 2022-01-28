@@ -1,0 +1,23 @@
+sdk use maven 3.6.3
+
+
+# Install skman.
+$ curl -s "https://get.sdkman.io" | bash
+$ source ~/.sdkman/bin/sdkman-init.sh
+
+# Check available maven versions:
+$ sdk list java
+$ sdk list maven
+
+# install desired candidate and version
+$ sdk install java 13.0.1-open
+$ sdk install gradle
+$ sdk install maven
+$ sdk install springboot
+
+
+# Verify Installation by checking versions:
+$ java -version
+$ gradle -v
+$ mvn --version
+$ spring --version
